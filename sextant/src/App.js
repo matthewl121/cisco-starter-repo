@@ -2,6 +2,7 @@ import './App.css';
 import React, {Component} from 'react';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
+import IPAddress from './IPAddress';
 
 class App extends Component {
   render() {
@@ -11,12 +12,12 @@ class App extends Component {
           <Banner textBanner={"Sextant"}></Banner>
         </div>
         <div>
-          <Exhibit name="Exhibit 1"></Exhibit>
-          <Exhibit name="Exhibit 2"></Exhibit>
-          <Exhibit name="Exhibit 3"></Exhibit>
-          <Exhibit name="Exhibit 4"></Exhibit>
-          <Exhibit name="Exhibit 5"></Exhibit>
-          <Exhibit name="Exhibit 6"></Exhibit>
+          <Exhibit name="Exhibit 1">
+            <IPAddress url="https://api.ipify.org?format=json"></IPAddress>
+          </Exhibit>
+          <Exhibit name="Exhibit 2">
+              <IPAddress url="https://api64.ipify.org?format=json"></IPAddress>
+          </Exhibit>
         </div>
       </div>
     );
