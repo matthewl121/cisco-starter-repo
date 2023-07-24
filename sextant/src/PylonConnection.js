@@ -1,26 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { w3cwebsocket as W3CWebSocket } from "websocket";
+
 const client = new W3CWebSocket('ws://localhost:55455');
 
-class PylonConnection extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            latency: null
-        };
-    }
+function PylonConnection() {
+    const [latency, setLatency] = useState(null);
 
-    componentDidMount() {
-        client.onmessage = (message) => {
-            this.setState({latency: new Date().getTime() - message.data})
+    useEffect(() => {
+        const handleReceiveMessage = (message) => {
+            setLatency(new Date().getTime() - message.data);
         };
-    }
 
-    render() {
-        return (
-            <span className="PylonConnection">{this.state.latency}</span>
-        );
-    }
+        client.onmessage = handleReceiveMessage;
+
+        return () => {
+            client.onmessage = null;
+        };
+    }, []);
+
+    return (
+        <span className="PylonConnection">{latency}</span>
+    );
 }
 
 export default PylonConnection;
