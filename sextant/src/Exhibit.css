@@ -1,24 +1,25 @@
 .Exhibit {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 1vw;
-    margin-bottom: 20px;
-  }
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 1vw;
+  margin-bottom: 20px;
+}
 
 .ExhibitHead {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+  font-size: 24px;
+  margin-bottom: 10px;
+  color:#003b49;
+}
 
 
 .ExhibitContent {
-    margin: 0.5vw;
-    padding: 1vw;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.75vw;
-    color: #002933;
-    background-color: #80e5ff;
-    border: 0.25vw solid #005266;
-    border-radius: 2vw;
-  }
+  margin: 0.5vw;
+  padding: 1vw;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.75vw;
+  color: #002933;
+  background-color: #80e5ff;
+  border: 0.25vw solid #005266;
+  border-radius: 2vw;
+}

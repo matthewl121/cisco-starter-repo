@@ -11,7 +11,7 @@ class App extends Component {
       <div className="AppHeader">
         <div className="HeaderRow">
           <div className="container">
-            <Banner textBanner={"Sextant Dashboard"} />
+            <Banner textBanner={"Sextant Dashboard"}/>
           </div>
         </div>
         <div className="ExhibitsWrapper container">
@@ -20,10 +20,10 @@ class App extends Component {
               <span className="IPStatisticsHeader">IP Statistics</span>
             </div>
             <Exhibit name="IP Address (IPv4)">
-              <IPAddress url="https://api.ipify.org?format=json" />
+              <IPAddress url="https://api.ipify.org?format=json"/>
             </Exhibit>
             <Exhibit name="IP Address (IPv6)">
-              <IPAddress url="https://api64.ipify.org?format=json" />
+              <IPAddress url="https://api64.ipify.org?format=json"/>
             </Exhibit>
             <Exhibit name="Pylon Latency">
               <PylonConnection />
