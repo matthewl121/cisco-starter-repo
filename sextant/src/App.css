@@ -15,15 +15,17 @@
 
 .container {
   width: 100%;
-  max-width: 1200px; /* Adjust the maximum width as needed */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 0 20px; /* Add some padding to the sides */
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .AppHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #ffffff; 
 }
 
@@ -32,9 +34,8 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: #0c5399; /* Dark blue background color */
+  background-color: #0c5399; 
   color: #ffffff;
-  padding: 10px;
   width: 100%;
   margin-bottom: 50px;
   font-size: 24px;
@@ -42,7 +43,7 @@
 
 
 .container {
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -53,18 +54,19 @@
   border: 7px solid #8b8b8b;
   padding: 20px;
   width: 100%;
-  max-width: 960px;
+  max-width: 900px;
   margin-top: 10px;
   border-radius: 2vw;
   margin: -10px -10px;
+  box-sizing: border-box;
   
-  @media (max-width: 960px) {
+  @media (max-width: 900px) {
     width: 100%;
   }
 }
 
 .ExhibitsWrapperInner {
-  margin: 0 10px; /* Adjust margin for inner spacing */
+  margin: 0 10px; 
 }
 
 .IPStatistics {

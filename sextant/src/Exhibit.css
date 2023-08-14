@@ -22,4 +22,5 @@
   background-color: #80e5ff;
   border: 0.25vw solid #005266;
   border-radius: 2vw;
+  box-sizing: border-box;
 }
